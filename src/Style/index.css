@@ -11,26 +11,43 @@ html, body {
   font-weight: 300;
 }
 
+
+
+
+/* Below this Style for Nav Bar */
+
 header {
   background-color: #fff; /* Change the background color */
-  border-bottom: 1px solid #ddd; /* Add a subtle border */
+  border-bottom: 2px solid #000000; /* Add a subtle border */
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 20px;
+  padding: 15px 10%;
   max-width: auto;
   margin: 0 auto;
 }
 
+.navbar{
+  display: flex;
+}
+
 .logo {
-  font-size: 24px;
   font-weight: 500;
+  color: black;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 nav ul.menu {
+  list-style: none;
+  display: flex;
+  margin-left: 30px;
+}
+
+nav ul.links {
   list-style: none;
   display: flex;
 }
@@ -43,17 +60,73 @@ nav ul.menu {
   margin-right: 0;
 }
 
+.links li {
+  margin-right: 20px;
+}
+
+.links li:last-child {
+  margin-right: 0;
+}
+
+.pages {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 10px;
+}
+
+.pages:hover {
+  color: #ffffff; /* Change hover color */
+  background: #000000 radial-gradient(circle, transparent 1%, #ff0000 1%) center/15000%;
+}
+.pages:active {
+  color: #ffffff; /* Change hover color */
+  background-size: 100%;
+  transition: background 0s;
+}
+
+
 .link {
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  transition: color 1s ease-in-out;
 }
 
-.link:hover {
+/* Links Color on hover */
+
+.fa-x-twitter:hover {
+  color: #1DA1F2; /* Change hover color */
+}
+
+.fa-linkedin:hover {
+  color: #0077b5; /* Change hover color */
+}
+
+.fa-github:hover {
+  color: #060466; /* Change hover color */
+}
+
+.fa-instagram:hover {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5, #4f5bd5, #487ee6, #34e5eb, #34e5eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-youtube:hover {
   color: #ff0000; /* Change hover color */
 }
+
+
+/* Nav Bar Style Done */
+
+
+
+
+
 
 /* Media Query for responsiveness */
 @media screen and (max-width: 768px) {
@@ -75,3 +148,4 @@ nav ul.menu {
     margin: 10px 0;
   }
 }
+
