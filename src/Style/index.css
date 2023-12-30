@@ -17,10 +17,11 @@ html, body {
 /* Below this Style for Nav Bar */
 
 header {
-  background-color: #fff; /* Change the background color */
   border-bottom: 2px solid #000000; /* Add a subtle border */
+  width: 100%;
 }
 
+/* The whole Header Container */
 .container {
   display: flex;
   align-items: center;
@@ -32,6 +33,7 @@ header {
 
 .navbar{
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -40,6 +42,7 @@ header {
   color: black;
   font-weight: bold;
   margin-right: 30px;
+  font-size: 1.5rem;
 }
 
 nav ul.menu {
@@ -48,17 +51,19 @@ nav ul.menu {
   margin-left: 30px;
 }
 
-nav ul.links {
-  list-style: none;
-  display: flex;
-}
 
 .menu li {
   margin-right: 20px;
+  justify-content: center;
 }
 
 .menu li:last-child {
   margin-right: 0;
+}
+
+nav ul.links {
+  list-style: none;
+  display: flex;
 }
 
 .links li {
@@ -90,8 +95,7 @@ nav ul.links {
 
 .link {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #333;
+  color: #000000;
   font-weight: 600;
   transition: color 1s ease-in-out;
 }
@@ -99,7 +103,7 @@ nav ul.links {
 /* Links Color on hover */
 
 .fa-x-twitter:hover {
-  color: #1DA1F2; /* Change hover color */
+  color: #ff0000; /* Change hover color */
 }
 
 .fa-linkedin:hover {
@@ -107,7 +111,7 @@ nav ul.links {
 }
 
 .fa-github:hover {
-  color: #060466; /* Change hover color */
+  color: #30038f; /* Change hover color */
 }
 
 .fa-instagram:hover {
@@ -125,8 +129,75 @@ nav ul.links {
 /* Nav Bar Style Done */
 
 
+/* Main Starts Here */
+main{
+  padding: 0 10%;
+}
+
+.topSection{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.contentSection{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
 
 
+.leftSection{
+  width: 49%;
+}
+
+.rightSection{
+  width: 30%;
+  text-align: right;
+}
+span i{
+  padding-right: 8px;
+}
+
+.status{
+  font-size: large;
+  font-weight: bold;
+}
+.statusAns{
+  font-weight: lighter;
+  color: red;
+}
+
+.rightSection img{
+  width: 100%;
+  margin: 5% 0;
+}
+
+.myName{
+  color: red;
+}
+.myName:hover{
+  color: rgb(25, 0, 255);
+}
+
+.contentSection .leftSection{
+  margin: 5% 0;
+}
+.contentSection .leftSection .intro{
+  font-size: 3rem;
+}
+
+.about{
+  margin-top: 50px;
+}
+
+.codeSkills{
+  margin: 2px 30px;
+  list-style:lower-alpha;
+}
 
 
 /* Media Query for responsiveness */
