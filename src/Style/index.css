@@ -178,9 +178,13 @@ span i{
 
 .myName{
   color: red;
+  display: block;
 }
 .myName:hover{
   color: rgb(25, 0, 255);
+}
+.imp-txt{
+  color:red;
 }
 
 .contentSection .leftSection{
@@ -199,25 +203,73 @@ span i{
   list-style:lower-alpha;
 }
 
-
-/* Media Query for responsiveness */
-@media screen and (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .logo {
-    margin-bottom: 15px;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .menu li {
-    margin: 10px 0;
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  /* CSS for desktop styles */
+  .mobile-img{
+    display: none;
   }
 }
 
+/* For Tablet View */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* CSS for tablet styles */
+  .mobile-img{
+    display: none;
+  }
+}
+
+/* For Mobile View */
+@media screen and (max-width: 767px) {
+  /* CSS for mobile styles */
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 5%;
+  }
+
+  .logo {
+    display: block;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navbar{
+    display: none;
+  }
+
+  main{
+    padding: 0 5%;
+  }
+
+  .mobile-img{
+    width: 100%;
+  }
+
+  .topSection .leftSection{
+    display: none;
+  }
+
+  .topSection .rightSection{
+    display: flex;
+    width: 100%;
+  }
+
+  .contentSection{
+    flex-direction: column;
+  }
+
+  .contentSection .leftSection{
+    width: 100%;
+  }
+  .contentSection .rightSection{
+    display: none;
+  }
+
+}
