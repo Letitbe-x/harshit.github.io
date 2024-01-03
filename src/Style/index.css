@@ -47,6 +47,7 @@ header {
   color: black;
 }
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -294,6 +295,16 @@ main {
   margin-top: 50px;
 }
 
+/* Programming language section */
+.skills{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+.icons{
+  text-align: center;
+}
+
 /* Footer section */
 /* footer {
   /* Add your footer styles here */
@@ -485,5 +496,8 @@ main {
   .mobile-links .link {
     color: white;
     padding-bottom: 25px;
+  }
+  .icons img{
+    height: 40px;
   }
 }
