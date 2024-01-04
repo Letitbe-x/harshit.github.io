@@ -107,7 +107,7 @@ nav ul {
   color: #ff0000;
 }
 
-.fa-linkedin:hover {
+.fa-linkedin-in:hover {
   color: #0077b5;
 }
 
@@ -135,6 +135,20 @@ nav ul {
   color: rgb(255, 255, 255);
   border-bottom: 2px solid white;
 }
+
+/* hover transition for images */
+
+img{
+  transition: transform 0.3s ease; /* Define the transition property */
+}
+
+img:hover{
+  transform: scale(1.1); /* Increase the scale to make it larger */
+}
+
+
+
+/* CSS for toggle menu */
 
 /* Default CSS */
 .mobile-menu {
@@ -416,6 +430,10 @@ main {
     justify-content: center;
   }
 
+  .fa-youtube:hover {
+    color: #000000;
+  }
+
   .mobile-pages .pages {
     color: white;
     display: block;
@@ -467,6 +485,10 @@ main {
     margin: 0;
   }
 
+  .fa-youtube:hover {
+    color: #000000;
+  }
+  
   .navbar {
     display: none;
   }
