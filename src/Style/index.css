@@ -252,7 +252,7 @@ img:hover{
   background-color: #000000;
   /* Adjust color as needed */
   margin: 5px 0;
-  transition: transform 0.s ease;
+  transition: transform 0.3s ease;
   /* Animation transition */
 }
 
@@ -373,6 +373,9 @@ main {
   }
 
   /* Add your desktop-specific styles here */
+  nav.mobile-menu.active{
+    display: none;
+  }
   .menu-toggle {
     display: none;
     /* Hide hamburger menu */
@@ -384,6 +387,7 @@ main {
     display: flex;
     justify-content: space-between;
   }
+
 
 }
 
